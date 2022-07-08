@@ -109,6 +109,7 @@ class ClockIn(object):
         new_info['jcqzrq'] = ""
         new_info['gwszdd'] = ""
         new_info['szgjcs'] = ""
+        new_info["internship"] = 1
 
         ocr = ddddocr.DdddOcr(show_ad=False)
         resp = self.sess.get(self.captcha_url,headers=self.headers)
